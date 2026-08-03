@@ -158,10 +158,13 @@
 
   <script>
     // URL ปลายทางของทั้ง 2 ลิงก์
-    const dashboards = {
-      overview: 'https://pointsuperduck.github.io/DashAllRio11/', // ลิงก์ 2: ภาพรวม
-      urgent: 'https://pointsuperduck.github.io/dashboard--11/'     // ลิงก์ 1: รายการเร่งรัด
-    };
+    // 📍 ในไฟล์ index.html (Main Dashboard)
+const dashboards = {
+  overview: 'https://pointsuperduck.github.io/DashAllRio11/?v=1.1',
+  urgent: 'https://pointsuperduck.github.io/dashboard--11/?v=1.1',
+  // 💡 เปลี่ยนตรงนี้เป็น Full URL เพื่อไปดึงไฟล์จาก DashAllRio11
+  step: 'https://pointsuperduck.github.io/DashAllRio11/step_summary.html?v=1.1' 
+};
 
     // ฟังก์ชันสลับแดชบอร์ด
     function switchDashboard(type, btnElement) {
